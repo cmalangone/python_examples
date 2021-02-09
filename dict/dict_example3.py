@@ -1,3 +1,5 @@
+# Calculate the average of the age.
+# You must check if eta exist. Dict doesn't have a schema!
 def calculate_avg_age(agenda):
     tot_eta = 0
     for user in agenda.keys():
@@ -8,6 +10,10 @@ def calculate_avg_age(agenda):
 
     return tot_eta
 
+# This method shows how to build a dict
+# Empty dict and adding an element
+# dict_1 = {}
+# dict_1['john'] = value
 def create_dictionary():
     user1_address = {'street': 'Elmield', 'cap': 'cb4'}
     user1_detail = {'nazionalita': 'Italiana', 'eta': 18, 'indirizzo': user1_address}
@@ -25,7 +31,6 @@ def create_dictionary():
 
 def main():
     new_agenda = create_dictionary()
-    user_to_find = input("Enter name to search in the agenda: ")
     average_age = calculate_avg_age(new_agenda)
     print("Average age: " + str(average_age))
 

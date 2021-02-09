@@ -1,9 +1,13 @@
+# Method that takes a dict (agenda) and a string (user)
+# Check inside the agenda is the user exists
 def find_user(agenda, user):
     if user in agenda:
         return True
     else:
         return False
 
+# This method check if the user exists and later if the key user the street exist
+# The dict is a nested structure
 def get_address(agenda, user):
     if user in agenda:
         if 'street' in agenda[user]:
@@ -13,16 +17,11 @@ def get_address(agenda, user):
     else:
         None
 
-def calculate_avg_age(agenda):
-    tot_eta = 0
-    for user in agenda.keys():
-        # debug here if you need
-        # print(agenda[user]
-        if 'eta' in agenda[user]:
-            tot_eta = tot_eta + agenda[user]['eta']
 
-    return tot_eta
-
+# This method shows how to build a dict
+# Empty dict and adding an element
+# dict_1 = {}
+# dict_1['john'] = value
 def create_dictionary():
     user1_address = {'street': 'Elmield', 'cap': 'cb4'}
     user1_detail = {'nazionalita': 'Italiana', 'eta': 18, 'street': user1_address}
@@ -49,7 +48,7 @@ def main():
         print("Not Found " + user_to_find)
     address_res = get_address(new_agenda, user_to_find)
     if address_res != None:
-        print("Address: "+ address_res)
+        print("Address: "+ str(address_res))
     else:
         print("Address not available")
 
