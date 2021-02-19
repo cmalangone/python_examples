@@ -14,7 +14,7 @@ def create_dictionary():
     user1_address = {'street': 'Elmield', 'cap': 'cb4'}
     user1_detail = {'nazionalita': 'Italiana', 'eta': 18, 'indirizzo': user1_address}
     user2 = {'nazionalita': 'Italiana', 'eta': 17, 'indirizzo': {'street': 'Oxford', 'cap': 'ox1'}}
-    agenda = {'John': user1_detail, 'Lorena': user2}
+    agenda = {'John': user1_detail, 'Sophia': user2}
 
     user3 = {'nazionalita': ['Italiana', 'British'], 'eta': 0, 'indirizzo': {'street': 'Cornovaglia', 'cap': 'CW1'}}
     agenda["Ben"] = user3

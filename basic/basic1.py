@@ -13,7 +13,7 @@ lista = [1, 3, 2]
 lista2 = [1, "a", 1.1]  # mutable e duplicati!
 tupla1 = (1, 3, 4)  # immutable!!!!
 set1 = {"apple", "banana", "cherry", "apple", "apple"}  # unici elementi e immutabible
-hash1 = {'1': 'cinzia', '4': 'lorena', '7': 'ben'}
+hash1 = {'1': 'cinzia', '4': 'sophia', '7': 'ben'}
 
 print(intero)
 print(doppio)
@@ -63,7 +63,7 @@ for elem in a:
     print(elem)
 
 # loop hash - exploding using variable to explain what is going on
-hashVar = {'cinzia': 'malangone', 'lorena': 'dilisio'}
+hashVar = {'cinzia': 'Malas', 'sophia': 'Relon'}
 chiavi = hashVar.keys()
 for chiave in chiavi:
     print(chiave)
